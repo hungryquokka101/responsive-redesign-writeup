@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CITATION: CSS and modules rom Bootstrap: https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+     <!-- Font Awesome: https://fontawesome.com/v6/icons/globe?s=solid&f=classic -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Responsive Redesign</title>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1" style="width: 100%;text-align: center;background-color: #E6E6FA;font-size:xx-large">
+            Responsive Redesign:&nbsp;&nbsp;Apply for U.S. Visa in China &nbsp;
+            <i class="fa-solid fa-passport"></i>
+            <!-- CITATION: boba image from this website: https://giphy.com/stickers/aminalstickers-cute-aminals-bee-kBHfPMfonjJmM9fpfx -->
+        </span>
+    </nav>
+    
+    <div class="container">
+        <h2 class="mt-3">Introduction</h2>
+            <p>
+                Visas are very important for internationals who study and work here in the U.S.&nbsp;For many International students and workers, visa application is often a stressful process.
+                &nbsp;As an International student,&nbsp;I have applied to U.S. visas several times through <a href="https://www.ustraveldocs.com/cn/">this website</a> and encountered many difficulties. I redesigned this website with the goal of making it more efficient and easier to use.
+        
+        <h2 class="mt-3">Usability and Accessibility Issues</h2>
+        <div class="mt-4" id="accordion">
+            <!-- item 1 -->
+            <div class="card text-center">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: #7F00FF">
+                    Unclear navigation
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    When the user first accesses the site, they see big blocks of irrelevant information with red background color.&nbsp;The important information and functionality, which are the introduction of the website’s purpose and the create account/log in buttons, are hidden toward the bottom of the page in green, a less obvious color.&nbsp;The user’s attention would be diverted by the irrelevant blocks of information and would have trouble finding where to start. This would decrease the efficiency, learnability and memorability of the website, since new users would have a harder time learning the workflow and returning users would be distracted and forget what they were supposed to do.
+                </div>
+              </div>
+            </div>
+
+            <!-- item 2 -->
+            <div class="card text-center">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color: #7F00FF">
+                    Misguiding elements / visual feedback
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  <ul>
+                      <li>
+                        The information links have a horizontal triangle next to them, which seem to indicate that they're expandable. However, these elements are just links. If the user clicks on the triangle, the webpage has no response.
+                      </li>
+                      <li>
+                        The search bar at the top right seems like a bar to search for content on the current webpage, but instead is a form that leads the user to Microsoft Bing.
+                      </li>
+                      <li>
+                        The red expandable rows at the top do not clearly indicate that they fold and unfold on click. Without actually clicking on these elements, it is hard for the users to understand what they do.
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <!-- item 3 -->
+            <div class="card text-center">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: #7F00FF">
+                    Tiny text and functional elements
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    All the texts on the website are tiny and crammed together.&nbsp;These texts increase the number of incorrect inputs and the amount of time it takes to complete typical tasks for the users.
+                </div>
+              </div>
+            </div>
+
+            <!-- item 4 -->
+            <div class="card text-center">
+                <div class="card-header" id="headingFour">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="color: #7F00FF">
+                        Low contrast text and functional elements
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                  <div class="card-body">
+                    There are many examples of low contrast between the text color and the background color. Some examples include white words on red background and white words on light green background. The low contrast decreases readability and increase the amount of time it takes to complete typical tasks.
+                  </div>
+                </div>
+            </div>
+
+            <!-- item 5 -->
+            <div class="card text-center">
+                <div class="card-header" id="headingFive">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="color: #7F00FF">
+                      Visual Clutter
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                  <div class="card-body">
+                    There are many big blocks of texts with no clear indication of priority, and no key information is highlighted. This design overloads the user with too much information and makes it harder for them to identify and complete the important tasks.
+                  </div>
+                </div>
+            </div>
+
+            <!-- item 6 -->
+            <div class="card text-center">
+                <div class="card-header" id="headingSix">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" style="color: #7F00FF">
+                        Bad error handling
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                  <div class="card-body">
+                        The search bar at the top right has bad error handling. When the user uses it to search something, they see an error message: “This form is not secure. Autofill has been turned off.” This browser error should be avoided by appropriate error handling on the website itself by implementing a secure version of the search bar. An error message like this would cause confusion and anxiety for the users and should be avoided.
+                  </div>
+                </div>
+            </div>
+
+            <!-- item 7 -->
+            <div class="card text-center">
+                <div class="card-header" id="headingSeven">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" style="color: #7F00FF">
+                        Accessibility problems and findings
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul>
+                        <li>
+                            According to WAVE, the page has many contrast errors, where the contrast between text and background colors is very low. I do agree with these errors, because I also have trouble reading the large blocks of text.
+                        </li>
+                        <li>
+                            There is an error about missing form label on the search bar. I agree with this error and think that it shows how misguiding the search bar is. It is presented as a search bar with the button “search site” but is actually a form.
+                        </li>
+                        <li>
+                            There are some warnings for very small text, which I also think is a major usability problem of the website. The low contrast and the small text make the readability of the site very low and would decrease the user’s efficiency when navigating the site.
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+    
+        <h2 class="mt-3">Lo-Fi Prototypes</h2>
+        <div class="row text-center mt-5">
+            <div class="col-md">
+                <div id="lofi" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#lofi" data-slide-to="0" class="active"></li>
+                      <li data-target="#lofi" data-slide-to="1"></li>
+                      <li data-target="#lofi" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <figcaption>Fig.1 - Desktop</figcaption>
+                        <img class="resize mt-3" src="Desktop.png" alt="First slide">
+                        
+                      </div>
+                      <div class="carousel-item">
+                        <figcaption>Fig.2 - Tablet</figcaption>
+                        <img class="resize mt-3" src="Tablet.png" alt="Second slide">
+                        
+                      </div>
+                      <div class="carousel-item">
+                        <figcaption>Fig.3 - Mobile</figcaption>
+                        <img class="resize mt-3" src="Mobile.png" alt="Third slide">
+                        
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#lofi" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon carousel-btn" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#lofi" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon carousel-btn" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>
+        </div>
+
+        <!-- Low-Fi Annotations: Accordion -->
+        <h4 class="mt-3" style="color:#7F00FF">
+            Annotations for Low-Fi Prototypes
+        </h4>
+        <div id="accordion">
+            <!-- item 1 -->
+            <div class="card text-center">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: #7F00FF">
+                    1:&nbsp;Unclear navigation
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    The buttons for creating an account and logging in and the welcome message are now at the top of the page. The two buttons are also bigger than the original ones. This allows the users to notice the buttons and the message and start the visa application process as soon as they go on the site.
+                </div>
+              </div>
+            </div>
+
+            <!-- item 2 -->
+            <div class="card text-center">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color: #7F00FF">
+                    2:&nbsp;Misguiding element - search bar
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    On the original website, the search bar at the top right seems like a bar to search for content on the current webpage, but instead is a form that leads the user to Microsoft Bing. For the redesign, I added the message “Search for information related to this site on Microsoft Bing” to make the purpose of the search bar clearer.
+                    For the mobile version, there is no search button next to the search bar. Instead, when the user clicks on the search box, the keyboard pops up. After they finish typing their input, they can use the “enter” button on the keyboard as the search button.
+                </div>
+              </div>
+            </div>
+            
+            <!-- item 3 -->
+            <div class="card text-center">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: #7F00FF">
+                    3:&nbsp;Bad error handling
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    It’s hard to demonstrate how to address the bad error handling with the search bar in the prototypes. If I were to actually implement the redesign in code, I would implement the search bar such that it redirects to Bing in a more secure way instead of triggering a browser-generated error message.
+                </div>
+              </div>
+            </div>
+
+            <!-- item 4 -->
+            <div class="card text-center">
+                <div class="card-header" id="headingFour">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="color: #7F00FF">
+                        4:&nbsp;Tiny text
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                  <div class="card-body">
+                    The text sizes are bigger in the redesign and organized in clear sections instead of being crammed together.
+                  </div>
+                </div>
+            </div>
+
+            <!-- item 5 -->
+            <div class="card text-center">
+                <div class="card-header" id="headingFive">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="color: #7F00FF">
+                      5:&nbsp;Visual Clutter
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                  <div class="card-body">
+                    All the information on the redesigned site is organized in sections with clear headings and rectangle containers. For the sections that have many links, such as “Important Links” and “Social Media Page”, I added bullet points for each link to make the list appear more organized. This allows the users to identify the purpose of each section and have an easier time locating information useful to them.
+                  </div>
+                </div>
+            </div>
+
+            <!-- item 6 -->
+            <div class="card text-center">
+                <div class="card-header" id="headingSix">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" style="color: #7F00FF">
+                        6:&nbsp;Misguiding element – expandable rows
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                  <div class="card-body">
+                    In the redesign, the expandable rows have arrows next to them indicating if they’re folded or unfolded. When a row expands, it is highlighted in green. These visual cues help the users understand that each row folds/unfolds on click.
+                  </div>
+                </div>
+            </div>
+
+            <!-- item 7 -->
+            <div class="card text-center">
+                <div class="card-header" id="headingSeven">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" style="color: #7F00FF">
+                        7:&nbsp;Misguiding element - information links
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                  <div class="card-body">
+                    In the new design, all the links are underlined (and will be blue in the hi-fi prototypes) to indicate that they are links. There are no more arrows next to the links.
+                  </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <h2 class="mt-4">Style Guide & Hi-Fi Prototypes</h2>
+        <!-- Figma prototype images -->
+        <div class="row text-center mt-5">
+            <div class="col-md-12">
+                <div id="hifi" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#hifi" data-slide-to="0" class="active"></li>
+                      <li data-target="#hifi" data-slide-to="1"></li>
+                      <li data-target="#hifi" data-slide-to="2"></li>
+                      <li data-target="#hifi" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <figcaption>Fig.1 - Style Guide</figcaption>
+                        <img class="resize" src="styleguide.png" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <figcaption>Fig.2 - Desktop</figcaption>
+                        <img class="resize" src="figma_desktop.png" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <figcaption>Fig.3 - Tablet</figcaption>
+                        <img class="resize" src="figma_tablet.png" alt="Third slide">
+                      </div>
+                      <div class="carousel-item">
+                        <figcaption>Fig.4 - Mobile</figcaption>
+                        <img class="resize" src="figma_mobile.png" alt="Fourth slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#hifi" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon carousel-btn" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#hifi" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon carousel-btn" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>
+        </div>
+
+        <!-- accordion for hi-fi -->
+        <h4 class="mt-5" style="color:#7F00FF">
+            Annotations for High-Fi Prototypes
+        </h4>
+        <div class="mt-3" id="accordion">
+            <!-- item 1 -->
+            <div class="card text-center">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: #7F00FF">
+                    1.&nbsp;Horizontal navigation bar at the top of the screen
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            Desktop and Tablet view: The current page we’re on is bolded. When the user hovers on the other elements (Login, Contact Us, FAQ), the text will be highlighted in grey. Clicking on each element leads the user to that page.
+                        </li>
+                        <li>
+                            Mobile view: The navigation bar becomes a hamburger menu to make the page responsive. On click, the navigation bar shows up vertically, allowing the user to navigate to different pages. The current page we’re on is bolded and displayed next to the hamburger.
+                        </li>
+                    </ul>
+              </div>
+            </div>
+
+            <!-- item 2 -->
+            <div class="card text-center">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color: #7F00FF">
+                    2:&nbsp;Button
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    This button is normally blue; on hover, it turns purple.
+                </div>
+              </div>
+            </div>
+            
+            <!-- item 3 -->
+            <div class="card text-center">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: #7F00FF">
+                    3:&nbsp;Search bar
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    The search bar has four different states: unclicked, clicked, with input text and highlighted input text
+                </div>
+              </div>
+            </div>
+
+            <!-- item 4 -->
+            <div class="card text-center">
+                <div class="card-header" id="headingFour">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="color: #7F00FF">
+                        4:&nbsp;Search button
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                  <div class="card-body">
+                        On click, this button opens a new page in Microsoft Bing with the search results. All buttons with the airplane icon lead the users to another page.
+                  </div>
+                </div>
+            </div>
+
+            <!-- item 5 -->
+            <div class="card text-center">
+                <div class="card-header" id="headingFive">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="color: #7F00FF">
+                        5:&nbsp;Accordion
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                  <div class="card-body">
+                    Each row in the accordion folds and unfolds on click. When a row in the accordion is selected, it is underlined.
+                  </div>
+                </div>
+            </div>
+
+            <!-- item 6 -->
+            <div class="card text-center">
+                <div class="card-header" id="headingSix">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" style="color: #7F00FF">
+                        6:&nbsp;Links
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                  <div class="card-body">
+                     The links are blue underlined and change to a darker blue upon hover.
+                  </div>
+                </div>
+            </div>
+
+            <!-- item 7 -->
+            <div class="card text-center">
+                <div class="card-header" id="headingSeven">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" style="color: #7F00FF">
+                        7:&nbsp;Scrollbar
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                  <div class="card-body">
+                        The scrollbar allows the user to scroll through and view all the links in the flex container. The user can scroll upward and downward. This is to make sure that the users don’t get overwhelmed by a lot of links at once and instead can choose how much they want to see.
+                  </div>
+                </div>
+            </div>
+
+            <!-- item 8 -->
+            <div class="card text-center">
+                <div class="card-header" id="headingEight">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight" style="color: #7F00FF">
+                        8:&nbsp;Large containers
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                  <div class="card-body">
+                        For all the large containers, I will be using bootstrap flex containers and cards. This is because the website I chose contains many sections of information, and flex containers organize them clearly in different rows and columns. The responsiveness for different screen sizes can also be easily achieved by adjusting the sizes of these containers and changing the number of containers on each row.
+                  </div>
+                </div>
+            </div>
+
+            <!-- item 9 -->
+            <div class="card text-center">
+                <div class="card-header" id="headingNine">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine" style="color: #7F00FF">
+                        9:&nbsp;Fonts and Spacing
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                  <div class="card-body">
+                    As we go from Desktop to Tablet to Mobile, the font size decreases and the spacing increases slightly to account for the different screen sizes. The relative difference in font (e.g, title vs. body) remains the same.
+                  </div>
+                </div>
+            </div>
+
+            <!-- item 10 -->
+            <div class="card text-center">
+                <div class="card-header" id="headingTen">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen" style="color: #7F00FF">
+                        10:&nbsp;Responsiveness
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
+                  <div class="card-body">
+                        To make sure that the website is responsive to handle different screen sizes, I use different number of cards (Bootstrap component) on each row for each screen size. Desktop View has 2 or 3 cards on each row; Tablet view has 2 cards; Mobile view has 1 card.
+                  </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="mt-3">Responsive Redesign</h2>
+        <div class="container-fluid mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" src="original_website.png" alt="Card image cap" style="width: 100%; height: 400px">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">
+                            <a href="https://www.ustraveldocs.com/cn/">Original Website</a>
+                          </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img class="card-img-top" src="responsive_redesign.png" alt="Card image cap" style="width: 100%; height: 400px">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">
+                            <a href="https://hungryquokka101.github.io/responsive-redesign/">Responsive Redesign</a>
+                          </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mt-4">Conclusion</h2>
+        <p class="mb-3">
+            Throughout the process of redesigning this website, I gained a better understanding of the common usability issues and how to address them effectively with visual design principles.
+        In my responsive redesign, there are definitely areas I could improve upon in the future, such as making certain components more responsive and the website more visually engaging.
+        </p>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
